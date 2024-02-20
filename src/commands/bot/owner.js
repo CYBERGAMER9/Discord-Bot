@@ -12,7 +12,7 @@ module.exports = async (client, interaction, args) => {
         },
         {
             name: "<:TWD_ID_CARD:1183024415185842268>┆Discord tag",
-            value: `</cyber>`,
+            value: `cyber_winner`,
             inline: true,
         },
         {
