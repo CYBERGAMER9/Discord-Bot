@@ -19,12 +19,12 @@ module.exports = async (client, interaction, args) => {
             const duration = moment.duration(client.uptime).format("\`D\` [days], \`H\` [hrs], \`m\` [mins], \`s\` [secs]");
 
             client.embed({
-                title: `ℹ・Bot information`,
+                title: `<:TWD_INFO:1208096044173361274>・Bot information`,
                 desc: `____________________________`,
                 thumbnail: client.user.avatarURL({ size: 1024 }),
                 fields: [
                {
-                    name: "ℹ️┆Information",
+                    name: "<:TWD_INFO:1208096044173361274>┆Information",
                     value: `Bot is a bot with which you can run your entire server! With no less than 350+ commands, we have a large bot with many options to improve your server!`,
                     inline: false,
                 },
@@ -34,62 +34,62 @@ module.exports = async (client, interaction, args) => {
                     inline: false,
                 },
                 {
-                    name: "🤖┆Bot name",
+                    name: "<:TWD_BOTS:1183034435390685234>┆Bot name",
                     value: `${client.user.username}`,
                     inline: true,
                 },
                 {
-                    name: "🆔┆Bot id",
+                    name: "<:TWD_ID_CARD:1183024415185842268>┆Bot id",
                     value: `${client.user.id}`,
                     inline: true,
                 },
                 {
-                    name: "💻┆Shards",
+                    name: "<a:TWD_WIFI:1183374744515526656>┆Shards",
                     value: `\`${client.options.shardCount}\` shards`,
                     inline: true,
                 },
                 {
-                    name: "🔧┆Bot owner",
-                    value: `<@!755297485328482356> `,
+                    name: "<a:TWD_CROWN:1183033867951685674>┆Bot owner",
+                    value: `<@!1169487822344962060>`,
                     inline: true,
                 },
                 {
-                    name: "🔧┆Bot developer",
-                    value: `<@!755297485328482356> <@!884553151666061372>`,
+                    name: "<:TWD_USAGE:1183243972013993984>┆Bot developer",
+                    value: `<@!1169487822344962060> <@!892608407444520970>`,
                     inline: true,
                 },
                 {
-                    name: "💻┆Commands",
+                    name: "<:TWD_EXAMPLE:1183244489276522548>┆Commands",
                     value: `\`${client.commands.size}\` commands`,
                     inline: true,
                 },
                 {
-                    name: "🌐┆Servers",
+                    name: "<a:TWD_USERS:1183029058775285832>┆Servers",
                     value: `\`${totalGuilds}\` servers`,
                     inline: true,
                 },
                 {
-                    name: "🌐┆Servers this shard",
+                    name: "<a:TWD_USERS:1183029058775285832>┆Servers this shard",
                     value: `\`${client.guilds.cache.size}\` servers`,
                     inline: true,
                 },
                 {
-                    name: "👥┆Members",
+                    name: "<:TWD_USERNAME:1183051792494379129>┆Members",
                     value: `\`${totalMembers}\` members`,
                     inline: true,
                 },
                 {
-                    name: "🔊┆Connected channels",
+                    name: "<a:TWD_SPEAKER:1208831274496557066>┆Connected channels",
                     value: `\`${totalVoice}\` channels`,
                     inline: true,
                 },
                 {
-                    name: "📺┆Channels",
+                    name: "<:TWD_CHANNEL:1183028361820373208>┆Channels",
                     value: `\`${totalChannels}\` channels`,
                     inline: true,
                 },
                 {
-                    name: "📅┆Created",
+                    name: "<a:TWD_CALLENDER:1183028715077238865>┆Created",
                     value: `<t:${Math.round(client.user.createdTimestamp / 1000)}>`,
                     inline: true,
                 },
@@ -100,12 +100,12 @@ module.exports = async (client, interaction, args) => {
                     inline: false,
                 },
                 {
-                    name: "🆙┆Uptime",
+                    name: "<a:TWD_UPTIME:1183374458581430393>┆Uptime",
                     value: `${duration}`,
                     inline: true,
                 },
                 {
-                    name: "⌛┆API speed:",
+                    name: "<a:TWD_TIMER:1183025564559351868>┆API speed:",
                     value: `\`${client.ws.ping}\`ms`,
                     inline: true,
                 },
@@ -139,4 +139,4 @@ module.exports = async (client, interaction, args) => {
         })
 }
 
- 
+
